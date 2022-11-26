@@ -13,11 +13,9 @@ jobs:
 
 
     steps:
-      - name: 'Before '
-        run: ls
-
       - uses: actions/checkout@v3  
+      - name: "Login to Docker hub"
+      -run: docker login --username NourhanSami --password dckr_pat_8_r8HFNg32Dnig4XE_wn1gWPBTc
 
-      - name: 'After '
-        run: ls
+
      
